@@ -1,10 +1,31 @@
 .App {
   text-align: center;
 }
+
 .container {
   display: flex;
+  flex-wrap: wrap;
 }
+
 .container .item {
   flex: 1;
+  flex-basis: 120px;
   padding: 30px;
+  border: 1px solid green;
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  transition: bottom ease 1s;
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  background-color: green;
+  width: 100%;
+  opacity: .5;
+}
+
+.item:hover .overlay {
+  bottom: 0;
 }
