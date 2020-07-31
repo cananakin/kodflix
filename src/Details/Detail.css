@@ -1,0 +1,35 @@
+.breadcrumb {
+    width: 100%;
+    background-color: #efefef;
+    position: relative;
+    top: 0;
+}
+
+.breadcrumb ul {
+    margin: 0;
+    list-style: none;
+    text-align: left;
+    padding: 10px 20px;
+}
+
+.breadcrumb li {
+    display: inline;
+    padding: 0px 5px;
+}
+
+.breadcrumb li:last-child {
+    color: #555;
+}
+
+.Details .content {
+    display: flex;
+}
+.Details .content .text, .Details .content .image{
+    padding: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+    .Details .content {
+        flex-direction: column;
+    } 
+}
