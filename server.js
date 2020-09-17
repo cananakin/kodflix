@@ -16,7 +16,6 @@ app.get('/*', function (req, res) {
     res.sendFile(__dirname + '/dist/kodflix/index.html');
 });
 
-app.use(cors());
 app.listen(process.env.PORT || 8080);
 
 console.log(`Running on port ${process.env.PORT || 8080}`)
