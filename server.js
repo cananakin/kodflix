@@ -13,7 +13,7 @@ app.use((req, res, next) => {
 app.use(express.static(__dirname + '/dist/kodflix'));
 
 app.get('/*', function (req, res) {
-    res.sendFile(__dirname + '/dist/kodflix/build/index.html');
+    res.sendFile(__dirname + '/dist/kodflix/src/index.html');
 });
 
 app.listen(process.env.PORT || 8080);
